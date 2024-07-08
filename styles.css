@@ -1,0 +1,106 @@
+body {
+    background-color: dimgray;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-custom {
+    background-color: black;
+    height: 60px;
+    border-bottom: 2px solid white;
+}
+
+.navbar-custom .nav-link {
+    color: white;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.navbar-custom .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-toggler {
+    border: none;
+    margin-left: 10px;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.content {
+    padding: 20px;
+    text-align: left;
+}
+
+.content h1 {
+    font-size: 48px;
+    color: rgb(0, 0, 0);
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+}
+
+.content h2 {
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0px;
+    margin-left: 50px;
+}
+
+.content p {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 0px;
+    margin-left: 50px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: black;
+        position: absolute;
+        top: 61px;
+        left: 0;
+        width: 30%;
+        height: 100vh; /* Full height of the viewport */
+        border-right: 2px solid white;
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content h2 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+}
+
